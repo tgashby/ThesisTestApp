@@ -39,7 +39,7 @@ describe("Task Spec", function() {
       tearDownDB(req, res, next);
     });
 
-    it("should be able to list all tasks", function() {
+    xit("should be able to list all tasks", function() {
         tasks.list(req, res, next);
 
         console.info("Res after list:")
@@ -49,11 +49,31 @@ describe("Task Spec", function() {
         expect(res.renderObj.tasks.length).toEqual(2);
     });
 
-    // it("should be able to add a task", function() {
-    //     tasks.add(...);
+    it("should be able to add a task", function() {
+        req.body = {};
+        req.body.name = "Add Task";
 
-    //     expect(...).toBe(...);
-    // });
+        console.info("Function call: " + new Date().getTime())
+        tasks.add(req, res, next);
+        console.info("Post function call: " + new Date().getTime())
+
+        var count = 0;
+        req.db.tasks.count({completed:false}, function(error, itemCount) {
+            if (error) return next(error);
+            
+            count = itemCount;
+            console.info("Inside count: " + new Date().getTime())
+        });
+
+        console.info("Test: " + new Date().getTime())
+        expect(count).toEqual(3);
+
+        req.db.tasks.find({name:"Add Task"}).count(function(error, numTasks) {
+            count = numTasks;
+        });
+
+        expect(count).toEqual(1);
+    });
 
     // it("should be able to mark all tasks completed", function() {
     //     tasks.markAllCompleted(...);

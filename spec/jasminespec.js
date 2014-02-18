@@ -26,6 +26,7 @@ describe("Task Spec", function() {
     var res = {};
     res.currPage = "UI HOME";
     res.renderObj = {};
+    res.httpCode = 0;
     res.render = function(pageName, object) {
         console.info("RENDER: " + pageName);
 
@@ -37,6 +38,12 @@ describe("Task Spec", function() {
         console.info("REDIRECT: " + pageName);
 
         this.currPage = pageName;
+    }
+
+    res.send = function(sendCode) {
+        console.info("SENDING: " + sendCode);
+
+        this.httpCode = sendCode;
     }
 
     var next = function(error) {
@@ -218,7 +225,7 @@ describe("Task Spec", function() {
         }, "markCompleted function call", 500);
 
         runs(function () {
-            req.db.tasks.find({_id: req.task._id}).count(function (error,  numTasks) {
+            req.db.tasks.find({_id: req.task._id, completed: true}).count(function (error,  numTasks) {
                 count = numTasks;
             });
 
@@ -235,9 +242,51 @@ describe("Task Spec", function() {
     });
 
     it("should be able to delete a task", function() {
-        tasks.del(...);
+        var getIdFlag = new Flag();
+        var deletedCompletedFlag = new Flag();
+        var countFlag = new Flag();
 
-        expect(...).toBe(...);
+        var count = 0;
+        req.task = {};
+
+        runs(function () {
+            req.db.tasks.findOne({completed: false}, function (error, task) {
+                req.task._id = task._id;
+            });
+
+            waitForDB(db, getIdFlag);
+        });
+
+        waitsFor(function () {
+            return getIdFlag.isDone();
+        }, "get id in del", 500);
+
+        runs(function () { 
+            tasks.del(req, res, next);
+
+            waitForDB(db, deletedCompletedFlag);
+        });
+
+        waitsFor(function () {
+            return deletedCompletedFlag.isDone();
+        }, "del function call", 500);
+
+        runs(function () {
+            req.db.tasks.find().count(function (error,  numTasks) {
+                count = numTasks;
+            });
+
+            waitForDB(db, countFlag);
+        });
+
+        waitsFor(function() {
+            return countFlag.isDone();
+        }, "count in del", 500);
+
+        runs(function () {
+            expect(count).toBe(1);
+            expect(res.httpCode).toEqual(200);
+        });
     });
 
     // Nav tests!

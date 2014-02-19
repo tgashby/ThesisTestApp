@@ -292,6 +292,15 @@ describe("Task Spec", function() {
     // Nav tests!
 });
 
+describe("HTML Spec", function () {
+    // Home Page
+    // SHOULD CATCH AN ERROR!!
+
+    // ToDo List Page
+
+    // Completed Page
+});
+
 function populateDB(req, res, next) {
     addTask("Task One", req, res, next);
     addTask("Task Two", req, res, next);

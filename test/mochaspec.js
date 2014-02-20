@@ -147,7 +147,7 @@ describe("Task Spec", function () {
         });
     });
     
-    it("should be able to delete a task", function () {
+    it("should be able to delete a task", function (done) {
         req.task = {};
 
         req.db.tasks.findOne({completed: false}, function (error, task) {

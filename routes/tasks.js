@@ -2,7 +2,9 @@
  * GET users listing.
  */
 
-exports.list = function(req, res, next, callback) {
+exports.list = function(req, res, next) {
+   var outerArgs = arguments;
+
    req.db.tasks.find({
       completed: false
    }).toArray(function(error, tasks) {
@@ -12,12 +14,14 @@ exports.list = function(req, res, next, callback) {
          tasks: tasks || []
       });
 
-      if (callback)
-         callback();
+      if (outerArgs.length > 3)
+         outerArgs[3]();
    });
 };
 
-exports.add = function(req, res, next, callback) {
+exports.add = function(req, res, next) {
+   var outerArgs = arguments;
+
    if (!req.body || !req.body.name) return next(new Error('No data provided.'));
    req.db.tasks.save({
       name: req.body.name,
@@ -28,12 +32,14 @@ exports.add = function(req, res, next, callback) {
       console.info('Added %s with id=%s', task.name, task._id);
       res.redirect('/tasks');
 
-      if (callback)
-         callback();
+      if (outerArgs.length > 3)
+         outerArgs[3]();
    })
 };
 
-exports.markAllCompleted = function(req, res, next, callback) {
+exports.markAllCompleted = function(req, res, next) {
+   var outerArgs = arguments;
+
    if (!req.body.all_done || req.body.all_done !== 'true') return next();
    req.db.tasks.update({
       completed: false
@@ -48,12 +54,14 @@ exports.markAllCompleted = function(req, res, next, callback) {
       console.info('Marked %s task(s) completed.', count);
       res.redirect('/tasks');
 
-      if (callback)
-         callback();
+      if (outerArgs.length > 3)
+         outerArgs[3]();
    })
 };
 
-exports.completed = function(req, res, next, callback) {
+exports.completed = function(req, res, next) {
+   var outerArgs = arguments;
+
    req.db.tasks.find({
       completed: true
    }).toArray(function(error, tasks) {
@@ -62,12 +70,14 @@ exports.completed = function(req, res, next, callback) {
          tasks: tasks || []
       });
 
-      if (callback)
-         callback();
+      if (outerArgs.length > 3)
+         outerArgs[3]();
    });
 };
 
-exports.markCompleted = function(req, res, next, callback) {
+exports.markCompleted = function(req, res, next) {
+   var outerArgs = arguments;
+
    if (!req.body.completed) return next(new Error('Param is missing'));
    req.db.tasks.updateById(req.task._id, {
       $set: {
@@ -79,19 +89,21 @@ exports.markCompleted = function(req, res, next, callback) {
       console.info('Marked task %s with id=%s completed.', req.task.name, req.task._id);
       res.redirect('/tasks');
 
-      if (callback)
-         callback();
+      if (outerArgs.length > 3)
+         outerArgs[3]();
    })
 };
 
-exports.del = function(req, res, next, callback) {
+exports.del = function(req, res, next) {
+   var outerArgs = arguments;
+
    req.db.tasks.removeById(req.task._id, function(error, count) {
       if (error) return next(error);
       if (count !== 1) return next(new Error('Something went wrong.'));
       console.info('Deleted task %s with id=%s completed.', req.task.name, req.task._id);
       res.send(200);
 
-      if (callback)
-         callback();
+      if (outerArgs.length > 3)
+         outerArgs[3]();
    });
 };

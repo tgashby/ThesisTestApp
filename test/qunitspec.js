@@ -121,7 +121,7 @@ asyncTest("A single task can be marked as completed", function () {
         tasks.markCompleted(req, res, next, function () {
             req.db.tasks.find({_id: req.task._id, completed: true}).count(function (error,  numTasks) {
                 equal(numTasks, 1, "Our one task is marked completed.");
-		equal(numTasks, 0, "This should fail");
+		//equal(numTasks, 0, "This should fail");
                 start();
             });
         });            

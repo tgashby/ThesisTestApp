@@ -1,10 +1,11 @@
 {
-  "name": "application-name",
+  "name": "todo-test-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "startNoLog": "node app.js",
     "start": "node app.js &> ./logfiles/testapplog.txt &",
+    "stop": "pkill -xf 'node app.js'",
     "test": "qunit -c routes/tasks.js -t test/qunitspec.js"
   },
   "dependencies": {
@@ -15,6 +16,6 @@
     "chai": "*",
     "mocha": "*",
     "qunit": "*",
-    "intern": "~1.4.0"
+    "intern": "~1.6.0-pre"
   }
 }

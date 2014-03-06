@@ -13,7 +13,7 @@ block content
         a(href="/tasks/completed") Completed
   h1= title
 
-  .list
+  #task-list.list
     .item.add-task
       div.action
         form(action='/tasks', method='post')
@@ -23,13 +23,13 @@ block content
       form(action="/tasks", method='post')
         input(type='hidden', value=locals._csrf, name='_csrf')
         div.name
-          input(type="text", name="name", placeholder='Add a new task')
+          input#add-task(type="text", name="name", placeholder='Add a new task')
         div.delete
           input.btn.btn-primary.btn-sm(type="submit", value='add')
     if (tasks.length === 0)
       | No tasks.
     each task, index in tasks
-      .item
+      .item.task
         div.action
           form(action='/tasks/#{task._id}', method='post')
             input(type='hidden', value=task._id.toString(), name='id')
@@ -40,7 +40,7 @@ block content
           span=index+1
             |.&nbsp;
         div.name
-          span.name=task.name
+          span.task-name=task.name
           //- no support for DELETE method in forms
           //- http://amundsen.com/examples/put-delete-forms/
           //- so do XHR request instead from public/javascripts/main.js

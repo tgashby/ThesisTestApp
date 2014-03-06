@@ -165,6 +165,40 @@ describe("Task Spec", function () {
     });
 });
 
+describe('Task Client Spec', function () {
+    this.timeout(10000);
+
+    var webdriver = require('selenium-webdriver');
+    var driver = new webdriver.Builder().
+        withCapabilities(webdriver.Capabilities.chrome()).
+        build();
+
+    after(function (done) {
+        driver.quit().then(function () {
+            done();
+        });
+    });
+
+    it('should do cool stuff', function (done) {
+        driver.get('http://localhost:3000/tasks');
+        driver.findElement(webdriver.By.id('add-task')).sendKeys('Laundry');
+        driver.findElement(webdriver.By.id('add-task')).sendKeys('\n');
+        driver.findElement(webdriver.By.id('task-list')).findElements({className: 'task'}).then(function(elements) {
+            
+            for (var i = 0; i < elements.length; i++) {
+                var ele = elements[i++];
+                console.log("inside loop");
+                ele.findElement({className: 'task-name'}).getText().then(function (innerText) {
+                    if(innerText === 'Laundry' || i == elements.length - 1) {
+                        assert.equal(innerText, 'Laundry');
+                        done();
+                    }
+                });
+            }
+        });
+    });
+});
+
 function populateDB(req, res, next) {
     addTask("Task One", req, res, next);
     addTask("Task Two", req, res, next);

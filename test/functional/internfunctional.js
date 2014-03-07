@@ -3,7 +3,7 @@ define([
 	'intern/chai!assert',
 	'require'
 ], function (registerSuite, assert, require) {
-	var url = 'tasks.html';
+	var url = 'localhost:3000/tasks.html';
 
 	registerSuite({
 		name: 'Todo (functional)',

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="nwtest"
+             errors="0"
+             failures="0"
+             tests="undefined">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Task Add" package="nwtest" skipped="0" 
+    tests="2" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 72 milliseconds.">
+        
+      </testcase>  
+    
+      <testcase name="Testing if element &lt;span.task-name[name=nightwatch]&gt; is present.">
+        
+      </testcase>  
+    
+    
+    </testsuite>
+  
+</testsuites>

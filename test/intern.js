@@ -6,7 +6,7 @@ define({
 	proxyPort: 9000,
 
 	// A fully qualified URL to the Intern proxy
-	proxyUrl: 'http://localhost:3000/',
+	proxyUrl: 'http://localhost:9000/',
 
 	// Default desired capabilities for all environments. Individual capabilities can be overridden by any of the
 	// specified browser environments in the `environments` array below as well. See
@@ -22,7 +22,7 @@ define({
 	// OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
 	// capabilities options specified for an environment will be copied as-is
 	environments: [
-		{ browserName: 'chrome'},
+		{ browserName: 'firefox'},
 	],
 
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service

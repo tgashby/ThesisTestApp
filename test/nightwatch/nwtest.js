@@ -6,7 +6,13 @@ module.exports = {
       .setValue('#add-task', 'nightwatch')
       .setValue('#add-task', '\n')
       .pause(1000)
-      .assert.elementPresent('span.task-name[name=nightwatch]')
+      .assert.elementPresent('span.task-name[name=nightwatch]');
+  },
+
+  "Task Delete" : function (browser) {
+    browser
+      .click(".task-delete")
+      .assert.elementNotPresent('span.task-name[name=nightwatch]')
       .end();
   }
 };

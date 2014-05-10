@@ -1,0 +1,590 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/tasks.jade",
+			"settings":
+			{
+				"buffer_size": 1737,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/nightwatch/nwtest.js",
+			"settings":
+			{
+				"buffer_size": 488,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/mochaspec.js",
+			"settings":
+			{
+				"buffer_size": 6609,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/mocha.opts",
+			"settings":
+			{
+				"buffer_size": 16,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/interntest.js",
+			"settings":
+			{
+				"buffer_size": 5391,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/tasks_completed.jade",
+			"settings":
+			{
+				"buffer_size": 444,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"int",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/tgashby/Documents/Projects/ThesisTestApp/test/mocha.opts",
+		"/Users/tgashby/Documents/Projects/ThesisTestApp/ThesisTestApp.sublime-project",
+		"/Users/tgashby/Documents/Projects/ThesisTestApp/test/mochaspec.js",
+		"/Users/tgashby/Documents/Projects/ThesisTestApp/test/interntest.js",
+		"/Volumes/NO NAME/KeyZ-PortableApps-Build-2014-01-02-1/Start.exe",
+		"/Users/tgashby/Google Drive/Cal Poly Classes/Thesis/Paper/Paper.sublime-project",
+		"/Users/tgashby/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/tgashby/Google Drive/Cal Poly Classes/Thesis/Paper/paper.tex",
+		"/Users/tgashby/Google Drive/Cal Poly Classes/Thesis/Paper/work.todo",
+		"/Users/tgashby/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/tgashby/Library/Application Support/Sublime Text 3/Packages/TodoManager/TodoManager.sublime-settings",
+		"/Users/tgashby/Google Drive/Cal Poly Classes/Thesis/Paper/paper[Conflict].tex",
+		"/Users/tgashby/Google Drive/Cal Poly Classes/Fifth Year/CSC 530/RubyInference/Paper/paper.bib",
+		"/Users/tgashby/Google Drive/Cal Poly Classes/Fifth Year/CSC 530/RubyInference/Paper/paper.tex",
+		"/Users/tgashby/Google Drive/Cal Poly Classes/Fifth Year/CSC 530/RubyInference/paper/paper.tex",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Thesis/Paper/thesis.sublime-project",
+		"/C/Users/Tag/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Thesis/Paper/.git/config",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Winter/CSC300/Term Paper/paper.tex",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Thesis/Paper/paper.log",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Thesis/Paper/Term Paper/IEEEannot.bst",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Thesis/Paper/termpaper.sublime-workspace",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/OOConcepts.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/TypeDecl.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/String.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/String.h",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/stl2.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/stl1.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/REFS.CPP",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/OwnerStandard.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/OwnerLazy.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/OwnerIrresp.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/OverloadRes.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/OVERLOAD.CPP",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/ListMainTempl.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/ListTempl.h",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/List.h",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/List.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/List2.h",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/List2.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/ListMain2.cpp",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/OManip.h",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/CASTING1.CPP",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fourth Year/Fall/CSC305/Slides/CASTING2.CPP",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fifth Year/CSC 480/wumpusGreenfoot/Wumpus/Maps/Reflex.sbm",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fifth Year/CSC 480/wumpusGreenfoot/README.TXT",
+		"/C/Users/Tag/Downloads/CPE480-Lab4-AStarSearch.sbm",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fifth Year/CSC 480/wumpusGreenfoot/Maps/Dumb.sbm",
+		"/C/Users/Tag/Downloads/CPE480-Lab3-BaseCode0/CPE480-Lab3-BaseCode0/testmaps/CPE480-Lab3-BFSearch.sbm",
+		"/C/Users/Tag/Google Drive/Cal Poly Classes/Fifth Year/CSC 480/wumpusGreenfoot/Maps/Table.sbm",
+		"/C/Program Files (x86)/Greenfoot/lib/bluej.defs",
+		"/C/cygwin/home/Tag/.zshrc",
+		"/F/.zshrc",
+		"/C/Users/Tag/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Tag/AppData/Roaming/Sublime Text 3/Packages/SublimeRailsNav/Default (Windows).sublime-keymap",
+		"/C/Users/Tag/AppData/Roaming/Sublime Text 3/Packages/SublimeRailsNav/SublimeRailsNav.sublime-settings",
+		"/C/Users/Tag/AppData/Roaming/Sublime Text 3/Packages/Rails File Switcher/README.md"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\\\paragraph\\{Cons\\}\\n\\n",
+			"\\\\paragraph\\{Pros\\}\\n",
+			"\\\\paragraph{Pros}\\n",
+			"\\paragraph{Pros}",
+			"For",
+			")",
+			"(",
+			"\\n",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"\\)",
+			"\\(",
+			"",
+			"\\ ",
+			"^ "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/tasks.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"_vintageous_input_parsers":
+								[
+								],
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"user_input": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/nightwatch/nwtest.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								488,
+								488
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"_vintageous_input_parsers":
+								[
+								],
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"user_input": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/mochaspec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_gluing_sequence": false,
+								"_vintageous_input_parsers":
+								[
+								],
+								"_vintageous_non_interactive": false,
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"user_input": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test/mocha.opts",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_input_parsers":
+								[
+								],
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"user_input": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test/interntest.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+								"_vintageous_input_parsers":
+								[
+								],
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"user_input": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/tasks_completed.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"_vintageous_input_parsers":
+								[
+								],
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"user_input": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ThesisTestApp.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "/Users/tgashby/Documents/Projects/ThesisTestApp/test"
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

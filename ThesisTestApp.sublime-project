@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+		"vintageous_verbose": true
+	}
+}
